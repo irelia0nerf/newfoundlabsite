@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
   <head>
 
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/foundlab_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="FoundLab desenvolve Auditable Trust Infrastructure: REX Guard verifica autoridade, aplica políticas determinísticas e produz evidência verificável antes de ações consequenciais." />
+    <meta name="description" content="FoundLab builds REX Guard, Auditable Trust Infrastructure for runtime authority verification, deterministic policy enforcement and cryptographically verifiable evidence." />
     <title>FoundLab | Auditable Trust Infrastructure</title>
 
     <!-- Open Graph -->
@@ -28,6 +28,18 @@
     <meta name="twitter:image" content="https://www.foundlab.com.br/og-image.jpg" />
     <meta name="twitter:image:alt" content="FoundLab — Auditable Trust Infrastructure" />
 
+    <!-- Small, scoped first-paint style for the no-JS fallback. -->
+    <style>
+      #root > .seo-fallback { box-sizing: border-box; min-height: 100vh; padding: clamp(24px, 7vw, 96px); display: flex; flex-direction: column; justify-content: center; gap: clamp(32px, 7vw, 80px); background: #f8fafc; color: #0f172a; font-family: Inter, system-ui, sans-serif; }
+      .seo-fallback__brand a { color: #0f172a; text-decoration: none; font-size: 1.125rem; font-weight: 650; }
+      .seo-fallback section { max-width: 790px; }
+      .seo-fallback__eyebrow { color: #8b6b30; font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.16em; }
+      .seo-fallback h1 { font-family: Georgia, serif; font-weight: 500; font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; margin: 24px 0; }
+      .seo-fallback section > p:not(.seo-fallback__eyebrow) { font-size: clamp(1rem, 2.5vw, 1.25rem); color: #475569; line-height: 1.6; }
+      .seo-fallback ul { color: #475569; line-height: 1.9; padding-left: 1.5rem; margin: 24px 0; }
+      .seo-fallback__cta { display: inline-block; margin-top: 12px; padding: 16px 24px; background: #0f172a; color: white; text-decoration: none; font-weight: 650; }
+    </style>
+
     <!-- Additional SEO -->
     <meta name="robots" content="index, follow" />
     <meta name="author" content="FoundLab" />
@@ -45,7 +57,7 @@
       "@type": "Organization",
       "name": "FoundLab",
       "url": "https://www.foundlab.com.br",
-      "description": "FoundLab desenvolve Auditable Trust Infrastructure para verificar autoridade, aplicar políticas determinísticas e produzir evidência verificável.",
+      "description": "FoundLab builds Auditable Trust Infrastructure to verify authority, enforce deterministic policies and produce cryptographically verifiable decision evidence.",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "sales",
@@ -59,7 +71,23 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBNPBRP5"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
+    <!-- Crawlable fallback; React createRoot replaces it on startup. -->
+    <div id="root">
+      <main id="main-content" class="seo-fallback">
+        <header class="seo-fallback__brand"><a href="/" aria-label="FoundLab home">FoundLab</a></header>
+        <section aria-labelledby="seo-heading">
+          <p class="seo-fallback__eyebrow">Auditable Trust Infrastructure</p>
+          <h1 id="seo-heading">AI can propose. Authority must be verified.</h1>
+          <p>REX Guard is Auditable Trust Infrastructure for consequential AI actions. It verifies authority, enforces deterministic policy, and produces cryptographically verifiable evidence before execution.</p>
+          <ul>
+            <li>Runtime authority verification before consequential actions.</li>
+            <li>Deterministic, fail-closed policy enforcement.</li>
+            <li>Cryptographically verifiable decision evidence.</li>
+          </ul>
+          <a class="seo-fallback__cta" href="mailto:commercial@foundlab.com.br">Evaluate REX Guard</a>
+        </section>
+      </main>
+    </div>
   <div class="scanlines" aria-hidden="true"></div>
   <style>
     @media (prefers-reduced-motion: reduce) {
